@@ -1,0 +1,2738 @@
+/* Start Globale Value */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #262424;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.contanier{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width: 768px){
+    .contanier{
+        width: 750px;
+    }
+}
+
+/* Medium  */
+@media (min-width: 992px){
+    .contanier{
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px){
+    .contanier{
+        width: 1170px;
+    }
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(239, 190, 159);
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 10px;
+}
+/* End Globale Value */
+/* Start Header */
+.content-dashpord .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-dashpord .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-dashpord .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-dashpord .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-dashpord .header span{
+        font-size: 25px;
+    }
+}
+.content-dashpord .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-dashpord .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-dashpord .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-dashpord .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-dashpord .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-dashpord .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-dashpord .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-dashpord .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-dashpord .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-dashpord .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-dashpord .header .sochial-icone i:hover{
+    color: blue;
+}
+
+.content-dashpord .header .menuo{
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.content-dashpord .header .menuo > span{
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: 5px 0 0;
+}
+.content-dashpord .header .menuo > .full{
+    width: 60%;
+    transition: 0.3s;
+}
+.content-dashpord .header .menuo-content{
+    position: absolute;
+    background-color: #45413a;
+    width: 300px;
+    top: 40px;
+    transition: 0.3s;
+    display: none;
+}
+.content-dashpord .header  .menuo-content ul{
+    margin: 0;
+    padding: 0;
+}
+.content-dashpord .header .menuo-content ul li:not(:last-child){
+    border-bottom: 1px solid black;
+}
+.content-dashpord .header .menuo-content ul li a{
+    color: #F1EFDE;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0 12px 15px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.content-dashpord .header .menuo-content ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -305px;
+    background-color: #f7db4c8f;
+    transition: 0.3s;
+    z-index: -1;
+}
+.content-dashpord .header .menuo-content ul li a:hover::before{
+    left: 0;
+}
+/* End Header */
+/* Start Intro */
+.content-dashpord .intro{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    display: flex;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 11px #ccc;
+    margin: 0 0 100px;
+}
+@media(max-width: 767px){
+    .content-dashpord .intro{
+    padding-top: 86.75px;
+    }
+}
+.content-dashpord .intro .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-dashpord .contanier{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.content-dashpord .intro .text{
+    width: 60%;
+    color: white;
+    line-height: 3;
+    font-size: 20px;
+    font-weight: 800;
+}
+@media(max-width: 767px){
+    .content-dashpord .intro .text{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 57px;
+    }
+}
+.content-dashpord .intro .text p{
+    margin: 0;
+}
+.content-dashpord .intro .img img{
+    position: relative;
+    border-radius: 50%;
+    animation: up-and-down 4s linear infinite;
+}
+@media (max-width: 767px){
+    .content-dashpord .intro .img img{
+        display: none;
+    }
+    .content-dashpord .intro .text{
+        width: 100%;
+    }
+}
+@keyframes up-and-down{
+    0%,100%{
+        top: 0;
+    }
+    50%{
+        top:-50px;
+    }
+}
+.content-dashpord .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-dashpord .up.show{
+    right: 25px;
+}
+/* End Intro */
+/* Startr Courses */
+.courses{
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+.courses #title{
+    margin: 0 auto 100px auto;
+    font-size: 50px;
+    font-weight: 800;
+    border: 2px solid #ccc;
+    width: fit-content;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: orange;
+    z-index: 1;
+    background-color: white;
+}
+.courses #title:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.courses #title::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.courses .contanier{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 40px;
+}
+@media(max-width: 767px){
+    .courses .contanier{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+    }
+}
+.courses .card{
+    
+    box-shadow: 0px 0px 10px black;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    transition: .3s;
+    background-color: #10100f;
+}
+.courses .card:hover{
+    margin-top: -15px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+.courses .card img{
+    width: 100%;
+}
+.courses .card .info{
+    text-align: center;
+    line-height: 2;
+    padding: 15px;
+    color: #f7db4c;
+}
+.courses .card .info h1{
+    margin: 0;
+    font-weight: 800;
+    font-size: 35px;
+}
+@media (max-width: 767px) {
+    .courses .card .info h1{
+        font-size: 25px;
+    }
+}
+.courses .card .info p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 23px;
+    color: #F1EFDE;
+}
+.courses .card .detalis{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.courses .card .detalis a{
+    color: #f1efde;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.courses .card .detalis a:hover{
+    color: orange;
+}
+.courses .card:hover .detalis a i{
+    animation: toLeft 1.5s linear infinite;
+}
+@keyframes toLeft{
+    0%,100%{
+        margin-right: 15px;
+    }
+    50%{
+        margin-right: 0;
+    }
+}
+.courses .card .send-data{
+    margin: 20px auto 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.courses .card:hover .send-data{
+    width: 300px;
+}
+
+.courses .card .send-data a{
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: #cdcd83;
+    color: black;
+}
+/* End Courses */
+/* Start Video */
+.video{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+@media(max-width: 767px){
+    .video {
+    margin-top: 50px;
+    }
+}
+.video .contanier{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+@media(max-width: 767px){
+    .video .contanier{
+        flex-direction: column;
+    }
+}
+.video .contanier p{
+    width: 50%;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    border-left: 2px solid orangered;
+    border-right: 2px solid orangered;
+    color: #f1efde;
+}
+.video .contanier p::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    left: 0;
+    top: 0;
+    animation: leftToright 2s linear infinite;
+}
+@keyframes leftToright{
+    0%,100%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+}
+.video .contanier p::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    right: 0;
+    bottom: 0;
+    animation: rightToleft 2s linear infinite;
+}
+@keyframes rightToleft{
+    0%,100%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+}
+@media(max-width: 767px){
+    .video .contanier p{
+        width: 100%;
+        text-align: center;
+        margin: -60px 0 70px;
+    }
+}
+.video .contanier .video2 video{
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+.video .contanier .video2{
+    position: relative;
+}
+.video .contanier .video2::after{
+    position: absolute;
+    content: "";
+    height: 120%;
+    width: 40%;
+    background-color: #F1EFDE;
+    right: -10%;
+    top: -10%;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .video .contanier .video2::after{
+        display: none;
+    } 
+}
+.video .contanier .video2 .after-icone{
+       position: absolute;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       right: -34px;
+       bottom: 175px;
+       flex-direction: column;
+       height: 150px;
+}
+@media (max-width: 767px){
+    .video .contanier .video2 .after-icone{
+        display: none;
+    }
+}
+.video .contanier .video2 .after-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+    font-size: 25px;
+}
+.video .contanier .video2 .after-icone a i:hover{
+    color: blue;
+}
+.video .contanier .video2 .after-icone .youtube i{
+    color: red;
+}
+.video .contanier .video2 .after-icone .youtube i:hover{
+    color: rgb(168, 17, 17);
+}
+@media(max-width: 767px){
+    .video .contanier .video2 video{
+        height: 420px;
+    }
+}
+/* End Video */
+/* Start Footer */
+.footer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #191919;
+    color: white;
+}
+.footer .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.footer .content .sochial h1{
+    color: orange;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.footer .content .sochial .icone{
+    display: flex;
+    align-items: center;
+}
+.footer .content .sochial .icone i{
+    margin-right: 10px;
+    color: green;
+    font-size: 25px;
+}
+.footer .content .location{
+    display: flex;
+    align-items: center;
+}
+.footer .content .location i{
+    color: #2196f3;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.footer .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.footer .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+@media(max-width: 767px){
+    .footer .sochial-icone a{
+        display: none;
+    }
+}
+.footer .sochial-icone a i{
+    color: #1877f2;
+    cursor: pointer;
+}
+.footer .sochial-icone a .icone-link{
+    margin-left: 9px;
+    font-size: 18px;
+    color: white;
+}
+.footer .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.footer .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+.footer .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.footer .sochial-icone .youtube span{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+.footer .sochial-icone i:hover{
+    color: blue;
+}
+.footer .copyright{
+    padding: 15px 0 0;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+.footer .copyright .parrots{
+    color: orange;
+    font-weight: 800;
+}
+.footer .copyright .alaa{
+    color: white;
+    font-weight: normal;
+}
+/* End Footer */
+/* --------------Start PotoShop Detalis---------------- */
+/* Start Header */
+.content-detalis-photoshop .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-photoshop .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-photoshop .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-photoshop .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-photoshop .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-photoshop .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-photoshop .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-photoshop .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-photoshop .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-photoshop .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-photoshop .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-photoshop .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-photoshop .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-photoshop .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-photoshop .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-photoshop .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-photoshop .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-photoshop .info-course img{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50% , -50%);
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+}
+.content-detalis-photoshop .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px) {
+    .content-detalis-photoshop .info-course h2{
+        font-size: 35px;
+    }
+}
+.content-detalis-photoshop .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-photoshop .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-photoshop .info-course ul li{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-photoshop .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-photoshop .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px) {
+    .content-detalis-photoshop .info-course ul li:first-child{
+        font-size: 20px;
+    }
+}
+.content-detalis-photoshop .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.content-detalis-photoshop .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-photoshop .info-course ul li i{
+    margin-right: 20px;
+    color: #2196f3;
+}
+.content-detalis-photoshop .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-photoshop .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-photoshop .info-course a:hover{
+    color: orange;
+}
+.content-detalis-photoshop .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-photoshop .up.show{
+    right: 25px;
+}
+/* --------------End PotoShop Detalis---------------- */
+/* --------------Start Digital Marketing  Detalis---------------- */
+/* Start Header */
+.content-detalis-digital-marketing .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-digital-marketing .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-digital-marketing .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-digital-marketing .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-digital-marketing .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-digital-marketing .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-digital-marketing .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-digital-marketing .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-digital-marketing .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-digital-marketing .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-digital-marketing .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-digital-marketing .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-digital-marketing .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-digital-marketing .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-digital-marketing .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-digital-marketing .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-digital-marketing .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-digital-marketing .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    top: 40%;
+    right: 15%;
+}
+.content-detalis-digital-marketing .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .info-course h2{
+        font-size: 30px;
+    }
+}
+.content-detalis-digital-marketing .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-digital-marketing .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-digital-marketing .info-course ul li{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-digital-marketing .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px){
+    .content-detalis-digital-marketing .info-course ul li:first-child{
+        font-size: 17px;
+    }
+}
+.content-detalis-digital-marketing .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.content-detalis-digital-marketing .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-digital-marketing .info-course ul li i{
+    margin-right: 20px;
+    color: #2196f3;
+}
+.content-detalis-digital-marketing .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+.content-detalis-digital-marketing .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-digital-marketing .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-digital-marketing .info-course a:hover{
+    color: orange;
+}
+.content-detalis-digital-marketing .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-digital-marketing .up.show{
+    right: 25px;
+}
+/* --------------End Digital Marketing Detalis---------------- */
+/* --------------Start Human Development Detalis---------------- */
+/* Start Header */
+.content-detalis-human-development .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-human-development .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-human-development .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-human-development .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-human-development .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-human-development .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-human-development .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-human-development .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-human-development .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-human-development .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-human-development .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-human-development .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-human-development .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-human-development .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-human-development .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-human-development .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-human-development .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-human-development .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+}
+.content-detalis-human-development .info-course .photo1{
+    left: 20%;
+    top: 14%;
+}
+.content-detalis-human-development .info-course .photo2{
+    left: 20%;
+    top: 34%;
+}
+.content-detalis-human-development .info-course .photo3{
+    left: 20%;
+    top: 55%;
+}
+.content-detalis-human-development .info-course .photo4{
+    left: 20%;
+    top: 81%;
+}
+.content-detalis-human-development .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .info-course h2{
+        font-size: 25px;
+    }
+}
+.content-detalis-human-development .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-human-development .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-human-development .info-course ul li{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+    color: #F1EFDE;
+}
+.content-detalis-human-development .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .info-course ul li:first-child{
+        font-size: 17px;
+    }
+}
+.content-detalis-human-development .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-human-development .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-human-development .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-human-development .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+@media(max-width: 767px){
+    .content-detalis-human-development .info-course ul .level{
+        font-size: 16px;
+    }
+}
+.content-detalis-human-development .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-human-development .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-human-development .info-course a:hover{
+    color: orange;
+}
+.content-detalis-human-development .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-human-development .up.show{
+    right: 25px;
+}
+/* --------------End Human Development Detalis---------------- */
+/* --------------Start Music Detalis---------------- */
+/* Start Header */
+.content-detalis-music .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-music .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-music .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-music .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-music .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-music .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-music .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-music .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-music .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-music .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-music .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-music .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-music .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-music .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-music .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-music .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-music .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-music .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-music .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-music .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-music .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-music .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-music .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    left: 20%;
+    top: 44%;
+}
+.content-detalis-music .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width:767px) {
+    .content-detalis-music .info-course h2{
+        font-size: 40px;
+    }
+}
+.content-detalis-music .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-music .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-music .info-course ul{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content-detalis-music .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width:767px) {
+    .content-detalis-music .info-course ul li:first-child{
+        font-size: 20px;
+    }
+}
+.content-detalis-music .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-music .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-music .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-music .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-music .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+.content-detalis-music .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-music .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-music .info-course a:hover{
+    color: orange;
+}
+.content-detalis-music .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-music .up.show{
+    right: 25px;
+}
+/* --------------End Music Detalis---------------- */
+/* --------------Start ICDL Detalis---------------- */
+/* Start Header */
+.content-detalis-icdl .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-icdl .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-icdl .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-icdl .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-icdl .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-icdl .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-icdl .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-icdl .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-icdl .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-icdl .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-icdl .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-icdl .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-icdl .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-icdl .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-icdl .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-icdl .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-icdl .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-icdl .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    left: 20%;
+    top: 44%;
+}
+.content-detalis-icdl .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+.content-detalis-icdl .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-icdl .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-icdl .info-course ul{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content-detalis-icdl .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .info-course ul li:first-child{
+        font-size: 25px;
+    }
+}
+.content-detalis-icdl .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-icdl .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-icdl .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-icdl .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-icdl .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+.content-detalis-icdl .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-icdl .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-icdl .info-course a:hover{
+    color: orange;
+}
+.content-detalis-icdl .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-icdl .up.show{
+    right: 25px;
+}
+/* --------------End Icdl Detalis---------------- */
+/* --------------Start English Detalis---------------- */
+/* Start Header */
+.content-detalis-english .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-english .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-english .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-english .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-english .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-english .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-english .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-english .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-english .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-english .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-english .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-english .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-english .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-english .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-english .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-english .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-english .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-english .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-english .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-english .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-english .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-english .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-english .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    left: 20%;
+    top: 44%;
+}
+.content-detalis-english .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px) {
+    .content-detalis-english .info-course h2{
+        font-size: 40px;
+    }
+}
+.content-detalis-english .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-english .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-english .info-course ul{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content-detalis-english .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px) {
+    .content-detalis-english .info-course ul li:first-child{
+        font-size: 20px;
+    }
+}
+.content-detalis-english .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F1EFDE;
+}
+.content-detalis-english .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-english .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-english .info-course a:hover{
+    color: orange;
+}
+@media(max-width: 767px){
+    .content-detalis-english .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-english .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-english .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-english .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+.content-detalis-english .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-english .up.show{
+    right: 25px;
+}
+/* --------------End English Detalis---------------- */
+/* --------------Start POrtrat Detalis---------------- */
+/* Start Header */
+.content-detalis-portrat .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-portrat .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-portrat .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-portrat .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-portrat .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-portrat .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-portrat .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-portrat .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-portrat .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-portrat .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-portrat .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-portrat .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-portrat .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-portrat .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-portrat .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-portrat .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-portrat .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-portrat .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    left: 20%;
+    top: 44%;
+}
+.content-detalis-portrat .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .info-course h2{
+        font-size: 40px;
+    }
+}
+.content-detalis-portrat .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-portrat .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-portrat .info-course ul{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content-detalis-portrat .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .info-course ul li:first-child{
+        font-size: 20px;
+    }
+}
+.content-detalis-portrat .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-portrat .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-portrat .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-portrat .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-portrat .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+.content-detalis-portrat .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-portrat .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-portrat .info-course a:hover{
+    color: orange;
+}
+.content-detalis-portrat .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-portrat .up.show{
+    right: 25px;
+}
+/* --------------End POrtrat Detalis---------------- */
+/* --------------Start Excel Detalis---------------- */
+/* Start Header */
+.content-detalis-excel .header{
+    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid orange;
+    box-shadow: 0 0 7px orange;
+}
+.content-detalis-excel .header .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-detalis-excel .header img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content-detalis-excel .header span{
+    font-size: 35px;
+    font-weight: 800;
+    color: #ff5e00;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .header span{
+        font-size: 25px;
+    }
+}
+.content-detalis-excel .header .sochial-icone{
+    display: flex;
+    align-items: center;
+}
+.content-detalis-excel .header .sochial-icone a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.content-detalis-excel .header .sochial-icone a i{
+    color: #0075ff;
+    cursor: pointer;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .header .sochial-icone a i{
+        font-size: 25px;
+    }
+}
+.content-detalis-excel .header .sochial-icone a .icone-link{
+    margin-left: 13px;
+    font-size: 18px;
+    color: white;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .header .sochial-icone a .icone-link{
+        display: none;
+    }
+}
+.content-detalis-excel .header .sochial-icone a .icone-link:hover{
+    color: orangered;
+}
+.content-detalis-excel .header .sochial-icone .youtube i{
+    color: red;
+    font-size: 40px;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .header .sochial-icone .youtube i{
+        font-size: 25px;
+    }
+}
+.content-detalis-excel .header .sochial-icone .youtube i:hover{
+    color: rgb(189, 23, 23);
+}
+.content-detalis-excel .header .sochial-icone i:hover{
+    color: blue;
+}
+/* End Header */
+.content-detalis-excel .all-detalis{
+    background-image: url(../images/intro-bg.png);
+    height: 495px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-detalis-excel .all-detalis .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.content-detalis-excel .all-detalis p{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    animation: uptodown 3s linear infinite;
+    text-align: center;
+}
+.content-detalis-excel .all-detalis p span{
+    margin-top: 30px;
+    display: block;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .all-detalis p{
+    font-size: 25px;
+    }
+}
+@keyframes uptodown{
+    0%,100%{
+        margin-top: -20px;
+    }
+    50%{
+        margin-bottom: -20px;
+    }
+}
+.content-detalis-excel .info-course{
+    margin: 80px 0;
+    position: relative;
+}
+.content-detalis-excel .info-course img{
+    position: absolute;
+    z-index: -1;
+    width: 306px;
+    opacity: 0.05;
+    left: 20%;
+    top: 44%;
+}
+.content-detalis-excel .info-course h2{
+    font-weight: 800;
+    font-size: 50px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 20px auto 50px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: orange;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .info-course h2{
+        font-size: 27px;
+    }
+}
+.content-detalis-excel .info-course h2:hover::before{
+    transform: scalex(0) skewx(35deg);
+}
+.content-detalis-excel .info-course h2::before{
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: 0;
+    height: 150%;
+    width: 150%;
+    background-color: #191919;
+    z-index: -1;
+    transform-origin: left;
+    transition: 1s;
+    transform: scalex(1) skewx(35deg);
+}
+.content-detalis-excel .info-course ul{
+    line-height: 3.5;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content-detalis-excel .info-course ul li:first-child{
+    font-size: 30px;
+    color: orange;
+    box-shadow: 0 0 10px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+@media(max-width: 767px) {
+    .content-detalis-excel .info-course ul li:first-child{
+        font-size: 19px;
+    }
+}
+.content-detalis-excel .info-course ul li{
+    width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #F1EFDE;
+}
+@media(max-width: 767px){
+    .content-detalis-excel .info-course ul li{
+        font-size: 15px;
+    }
+}
+.content-detalis-excel .info-course ul li:hover{
+    color: orange;
+}
+.content-detalis-excel .info-course ul li i{
+    margin-left: 20px;
+    color: #2196f3;
+}
+.content-detalis-excel .info-course ul .level{
+    font-size: 30px;
+    color: orangered;
+}
+@media(max-width: 767px) {
+    .content-detalis-excel .info-course ul .level{
+        font-size: 16px;
+    }
+}
+.content-detalis-excel .info-course .send-data{
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.content-detalis-excel .info-course .send-data a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.content-detalis-excel .info-course a:hover{
+    color: orange;
+}
+.content-detalis-excel .up{
+    position: fixed;
+    bottom: 20px;
+    right: -40px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content-detalis-excel .up.show{
+    right: 25px;
+}
+/* --------------End Excel Detalis---------------- */
+/* Start Form */
+.data{
+    background-image: url(../images/2109.webp);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.data::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    left: 220px;
+    top: 0;
+    background-color: #5a1e08;
+    box-shadow: 0 0 13px orange;
+    z-index: 1;
+    animation: upanddwon 20s linear infinite;
+}
+.data::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    right: 220px;
+    bottom: 0;
+    background-color: #5a1e08;
+    box-shadow: 0 0 13px orange;
+    animation: upanddwon 20s linear infinite;
+}
+@keyframes upanddwon{
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+    }
+}
+@media(max-width: 767px){
+    .data::before,
+    .data::after{
+        display: none;
+    }
+}
+.data .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);  
+}
+.data form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 15px #ffa500d9;
+    padding-bottom: 130px;
+    border-radius: 10px;
+    color: white;
+}
+.data form label{
+    margin: 0 28px;
+    padding: 20px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.data form label:hover{
+    color: orangered;
+}
+.data form input{
+   margin: 20px 20px 0;
+    padding: 15px;
+    width: 550px;
+    background: transparent;
+    outline: none;
+    border: 1px solid orange;
+    border-radius: 6px;
+    color: white;
+}
+@media (max-width: 767px){
+    .data form input{
+    width: 300px;
+    }
+}
+.data form input:focus::placeholder{
+    opacity: 0;
+    transition: 0.3s;
+}
+.data form .send{
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #462700;
+    font-style: italic;
+    cursor: pointer;
+}
+.data form .string{
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Caveat;
+    font-style: italic;
+    color: orangered;
+}
+@media (max-width: 767px){
+    .data form .string{
+        display: none;
+    }
+}
+/* End Form */
